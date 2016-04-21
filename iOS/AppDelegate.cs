@@ -19,12 +19,12 @@ namespace SimpleSample.iOS
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			window.MakeKeyAndVisible ();
 			window.RootViewController = new UINavigationController(new SongViewController());
-			SyncManager.Shared.Sync ();
 			return true;
 		}
 
 		void SetupApp ()
 		{
+			SimpleAuth.OnePassword.Activate ();
 			App.Initialize ();
 			App.AlertFunction = (title, message) => {
 				new UIAlertView (title, message, null, "Ok").Show();
@@ -62,6 +62,7 @@ namespace SimpleSample.iOS
 		{
 			// Restart any tasks that were paused (or not yet started) while the application was inactive. 
 			// If the application was previously in the background, optionally refresh the user interface.
+			SyncManager.Shared.Sync ();
 		}
 
 		public override void WillTerminate (UIApplication application)
