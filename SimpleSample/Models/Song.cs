@@ -5,6 +5,7 @@ namespace SimpleSample
 {
 	public class Song
 	{
+		[Indexed]
 		public string Artist { get; set; }
 
 		public DateTime Timestamp { get; set; }
