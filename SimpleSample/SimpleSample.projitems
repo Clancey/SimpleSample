@@ -25,6 +25,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Data\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SongViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseTableViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Artist.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ArtistViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ArtistSongViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseTableGroupViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />

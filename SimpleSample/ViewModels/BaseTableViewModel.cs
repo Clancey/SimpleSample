@@ -28,12 +28,12 @@ namespace SimpleSample
 
 		public override int RowsInSection (int section)
 		{
-			var rows = Database.Main.RowsInSection<Song> (section);
+			var rows = Database.Main.RowsInSection<T> (section);
 			return rows;
 		}
 		public override string [] SectionIndexTitles ()
 		{
-			return Database.Main.QuickJump<Song> ();
+			return Database.Main.QuickJump<T> ();
 		}
 
 		public virtual void SetupEvents ()

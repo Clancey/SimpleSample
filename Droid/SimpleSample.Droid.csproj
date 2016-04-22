@@ -74,6 +74,7 @@
     <Compile Include="Cells\SongCell.cs" />
     <Compile Include="Fragments\BaseModelFragment.cs" />
     <Compile Include="Fragments\SongFragment.cs" />
+    <Compile Include="Cells\ArtistCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

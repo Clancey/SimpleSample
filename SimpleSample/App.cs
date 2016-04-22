@@ -19,6 +19,7 @@ namespace SimpleSample
 		static void RegisterCells ()
 		{
 			CellRegistrar.Register<Song, SongCell> ();
+			CellRegistrar.Register<Artist, ArtistCell> ();
 		}
 
 

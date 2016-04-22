@@ -18,7 +18,12 @@ namespace SimpleSample.iOS
 			SetupApp ();
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			window.MakeKeyAndVisible ();
-			window.RootViewController = new UINavigationController(new SongViewController());
+			window.RootViewController = new UITabBarController () {
+				ViewControllers = new UIViewController []{
+					new UINavigationController(new SongViewController()),
+					new UINavigationController(new ArtistViewController()),
+				}
+			};
 			return true;
 		}
 
@@ -27,7 +32,7 @@ namespace SimpleSample.iOS
 			SimpleAuth.OnePassword.Activate ();
 			App.Initialize ();
 			App.AlertFunction = (title, message) => {
-				new UIAlertView (title, message, null, "Ok").Show();
+				new UIAlertView (title, message, null, "Ok").Show ();
 			};
 			App.Invoker = this.BeginInvokeOnMainThread;
 			App.OnShowSpinner = (text) => {

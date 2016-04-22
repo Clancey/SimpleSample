@@ -139,6 +139,9 @@
     <Compile Include="ViewControllers\BaseModelViewController.cs" />
     <Compile Include="Cells\SongCell.cs" />
     <Compile Include="ViewControllers\SongViewController.cs" />
+    <Compile Include="ViewControllers\ArtistViewController.cs" />
+    <Compile Include="ViewControllers\ArtistSongsViewController.cs" />
+    <Compile Include="Cells\ArtistCell.cs" />
   </ItemGroup>
   <Import Project="..\SimpleSample\SimpleSample.projitems" Label="Shared" Condition="Exists('..\SimpleSample\SimpleSample.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

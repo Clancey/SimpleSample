@@ -12,7 +12,8 @@ namespace SimpleSample.Data
 		public Database () : base (dbPath)
 		{
 			CreateTables (
-				typeof (Song)
+				typeof (Song),
+				typeof (Artist)
 			);
 		}
 	}
